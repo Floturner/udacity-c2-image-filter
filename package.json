@@ -2,12 +2,15 @@
 	"name": "udacity-c2-image-filter",
 	"version": "1.0.0",
 	"description": "Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.",
-	"main": "index.js",
+	"main": "server.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"tsc": "tsc",
+		"dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
+		"prod": "tsc && node ./www/server.js",
 		"clean": "rimraf www/ || true",
-		"build": "npm run clean && tsc && cp package.json www/package.json && mkdir www/tmp/ && cd www && zip -r Archive.zip . && cd ..",
-		"dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
+		"build": "npm run clean && tsc && cp package.json www/package.json && cd www && mkdir tmp && zip -r Archive.zip . && cd ..",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",

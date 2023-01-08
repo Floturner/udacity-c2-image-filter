@@ -12,8 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{HOST}}/filteredimage?image_url=https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?cs=srgb%26dl=pexels-nao-triponez-792199.jpg%26fm=jpg%26_gl=1*87g280*_ga*MTUwMTA1MjIzMy4xNjczMjE0MDYy*_ga_8JE65Q40S6*MTY3MzIxNDA2OS4xLjEuMTY3MzIxNDY0My4wLjAuMA..",
-					"protocol": "http",
+					"raw": "{{HOST}}/filteredimage?image_url=https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?cs=srgb%26dl=pexels-nao-triponez-792199.jpg%26fm=jpg%26_gl=1*87g280*_ga*MTUwMTA1MjIzMy4xNjczMjE0MDYy*_ga_8JE65Q40S6*MTY3MzIxNDA2OS4xLjEuMTY3MzIxNDY0My4wLjAuMA..",
 					"host": [
 						"{{HOST}}"
 					],
@@ -23,7 +22,7 @@
 					"query": [
 						{
 							"key": "image_url",
-							"value": "https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?cs=srgb&dl=pexels-nao-triponez-792199.jpg&fm=jpg&_gl=1*87g280*_ga*MTUwMTA1MjIzMy4xNjczMjE0MDYy*_ga_8JE65Q40S6*MTY3MzIxNDA2OS4xLjEuMTY3MzIxNDY0My4wLjAuMA.."
+							"value": "https://images.pexels.com/photos/792199/pexels-photo-792199.jpeg?cs=srgb%26dl=pexels-nao-triponez-792199.jpg%26fm=jpg%26_gl=1*87g280*_ga*MTUwMTA1MjIzMy4xNjczMjE0MDYy*_ga_8JE65Q40S6*MTY3MzIxNDA2OS4xLjEuMTY3MzIxNDY0My4wLjAuMA.."
 						}
 					]
 				}
@@ -54,7 +53,7 @@
 	"variable": [
 		{
 			"key": "HOST",
-			"value": "localhost:8082",
+			"value": "http://image-filter-flotab-dev.us-east-1.elasticbeanstalk.com",
 			"type": "string"
 		}
 	]
